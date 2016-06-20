@@ -50,6 +50,14 @@ public class ProfilePage extends AppCompatActivity{
         assert headerTag != null;
         headerTag.setText("Create Your Profile");
 
+        toggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(ProfilePage.this,HomeScreen.class));
+                overridePendingTransition(R.anim.pull_in_left,R.anim.push_out_right);
+            }
+        });
+
         profilePic = (ImageView)findViewById(R.id.profilePage_profilePic);
         wallPicture = (ImageView) findViewById(R.id.profilePage_wallPic);
 
@@ -71,6 +79,7 @@ public class ProfilePage extends AppCompatActivity{
             public void onClick(View v) {
                 Intent intent = new Intent(ProfilePage.this,PinInterest.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.pull_in_right,R.anim.push_out_left);
             }
         });
 

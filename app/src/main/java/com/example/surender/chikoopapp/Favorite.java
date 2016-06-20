@@ -22,8 +22,8 @@ public class Favorite extends AppCompatActivity {
         setContentView(R.layout.activity_favorite);
         favList = (ListView) findViewById(R.id.favorite_listView);
 
-        favTitle = new String[]{"a","b","c","a","b","c","a","b","c","a","b","c","a","b","c","a","b","c","a","b","c",};
-        favIcon = new int[]{R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,R.drawable.p26,};
+        favTitle = new String[]{"Entertainment ","Food & Drinks","Lifestyle","Fashion","Automobiles","Appliances","Health Care","Education","Travel"};
+        favIcon = new int[]{R.drawable.p50,R.drawable.p51,R.drawable.p52,R.drawable.p53,R.drawable.p54,R.drawable.p55,R.drawable.p56,R.drawable.p57,R.drawable.p58};
 
         favList.setAdapter(new PinInterestAdapter(this,favTitle,favIcon,"FOLLOW"));
 

@@ -24,26 +24,25 @@
         >
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/spinner_height"
             >
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/lenguage_list"
             android:id="@+id/activeNEarn_NativeLanguage"
+            android:layout_centerVertical="true"
             />
             <include layout="@layout/under_line"
-                android:layout_below="@+id/activeNEarn_NativeLanguage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-15dp"
+                android:layout_alignParentBottom="true"
                 />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
+            android:layout_height="@dimen/spinner_height"
 
             >
             <TextView
@@ -55,6 +54,7 @@
                 android:textSize="16sp"
                 android:gravity="bottom"
                 android:id="@+id/txt"
+                android:layout_centerVertical="true"
                 />
             <CheckBox
                 android:layout_width="wrap_content"
@@ -64,18 +64,18 @@
                 android:checked="true"
                 android:layout_alignEnd="@+id/txt"
                 app:buttonTint="@color/TheamColor"
+                android:layout_centerVertical="true"
                 />
             <include layout="@layout/under_line"
-                android:layout_below="@+id/txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-5dp"
+                android:layout_alignParentBottom="true"
                 />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/spinner_height"
             >
         <Spinner
             android:layout_width="match_parent"
@@ -86,17 +86,16 @@
 
             />
             <include layout="@layout/under_line"
-                android:layout_below="@+id/activeNEarn_HouseHold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-15dp"
+                android:layout_alignParentBottom="true"
                 />
         </RelativeLayout>
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/spinner_height"
             >
         <Spinner
             android:layout_width="match_parent"
@@ -106,16 +105,15 @@
             android:id="@+id/activeNEarn_familyIncome"
             />
             <include layout="@layout/under_line"
-                android:layout_below="@+id/activeNEarn_familyIncome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-15dp"
+                android:layout_alignParentBottom="true"
                 />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/spinner_height"
             >
         <Spinner
             android:layout_width="match_parent"
@@ -125,10 +123,9 @@
             android:id="@+id/activeNEarn_Profession"
             />
             <include layout="@layout/under_line"
-                android:layout_below="@+id/activeNEarn_Profession"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-15dp"
+                android:layout_alignParentBottom="true"
                 />
         </RelativeLayout>
 
