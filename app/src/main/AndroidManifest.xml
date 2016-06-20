@@ -51,7 +51,7 @@
         <activity
             android:name=".ProfilePage"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme2"/>
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".CompleteNEarn"
             android:screenOrientation="portrait"
@@ -73,24 +73,30 @@
             android:name=".CiaoScreen"
             android:label="Ciao"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".DrawerAccount"
-            android:parentActivityName=".HomeScreen"/>
-        <activity android:name=".DrawerNotification"
-            android:parentActivityName=".HomeScreen"/>
-        <activity android:name=".DrawerPrivacy"
-            android:parentActivityName=".HomeScreen"/>
-        <activity android:name=".DrawerMyCoupons"
-            android:parentActivityName=".HomeScreen"/>
-        <activity android:name=".MyTransaction"
-            android:parentActivityName=".HomeScreen"/>
-        <activity android:name=".DrawerFindFriends"
-            android:parentActivityName=".HomeScreen"/>
-
+        <activity
+            android:name=".DrawerAccount"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".DrawerNotification"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".DrawerPrivacy"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".DrawerMyCoupons"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".MyTransaction"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".DrawerFindFriends"
+            android:parentActivityName=".HomeScreen" />
         <activity
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AppIntroClass"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
 
 </manifest>
