@@ -109,7 +109,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/hor_ciao"
+                        android:src="@drawable/hor_celegram"
                         android:scaleType="centerInside"
                         android:id="@+id/hor_celegram"
                         android:background="@null"/>
@@ -138,7 +138,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/hor_ciao"
+                        android:src="@drawable/hor_cinsio"
                         android:scaleType="centerInside"
                         android:id="@+id/hor_cinsio"
                         android:background="@null"/>
@@ -167,7 +167,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/hor_ciao"
+                        android:src="@drawable/hor_chikoopay"
                         android:scaleType="centerInside"
                         android:id="@+id/hor_chikoopay"
                         android:background="@null"/>

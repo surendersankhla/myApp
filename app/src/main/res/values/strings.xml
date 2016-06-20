@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ChikoopApp</string>
+    <string name="app_name">Chikoop</string>
     <string name="password_min_8_character">Password (min. 8 character)</string>
     <string name="user_name">User name</string>
     <string name="email_address">Email address</string>
