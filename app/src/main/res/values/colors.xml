@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9530</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ff9530</color>
+    <color name="TheamColor">#ff9530</color>
+    <color name="textColor">#ffffff</color>
+    <color name="InActiveDotColor">#afadad</color>
+    <color name="ActiveDotColor">#ff9530</color>
+    <color name="hintColor">#a5a5a5</color>
+    <color name="FiledTextColor">#000000</color>
+    <color name="LabelColor">#000000</color>
+    <color name="seperator_color">#B36B24</color>
+    <color name="congo_font_color">#616161</color>
+    <color name="background_theme_color">#ffffff</color>
+    <color name="offerTagColor">#c62f24</color>
+    <color name="drawerTextColor">#787777</color>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="@color/background_theme_color"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_centerVertical="true">
+
+    <RelativeLayout
+        android:id="@+id/img_layout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pinAdapter_icon"
+            android:src="@drawable/p27"
+            android:layout_centerInParent="true"
+            android:contentDescription="img" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch Lover"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:id="@+id/pinAdapter_iconTitle"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/pinAdapter_pinIT"
+        android:layout_toRightOf="@+id/img_layout"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:text="PIN IT"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:id="@+id/pinAdapter_pinIT"
+        android:background="@drawable/border_frame"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        />
+
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lay"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>

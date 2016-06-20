@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/mainLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imgLayout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pvr_cinema"
+                android:id="@+id/coupon_backimg"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/gradiant_bnw"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="PVR Cinemas,3 Location"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:id="@+id/coupon_img_title"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save Rs. 300"
+                android:textColor="@color/textColor"
+                android:id="@+id/coupon_offerTag"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/offer_tag_background"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expired On:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/expireTag"
+        android:layout_below="@id/mainLayout"
+        android:textColor="@color/hintColor"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coupon_expireDateValue"
+        android:text="20 jun 2016"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/expireTag"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/mainLayout"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hintColor"
+        android:layout_below="@id/expireTag"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

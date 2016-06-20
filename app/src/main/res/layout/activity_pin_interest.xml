@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.surender.chikoopapp.PinInterest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/BottomButton"
+        android:background="@color/seperator_color"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAVORITES"
+            android:textColor="@color/textColor"
+            android:layout_marginRight="1dp"
+            android:background="@color/TheamColor"
+            android:layout_weight="50"
+            android:id="@+id/pin_favorites"
+            android:onClick="favoriteBtnCall"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="1dp"
+            android:background="@color/TheamColor"
+            android:layout_weight="50"
+            android:id="@+id/pin_submit"
+            android:onClick="submitBtnCall"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/BottomButton"
+        android:id="@+id/pin_listView"
+        android:clickable="false"
+        android:background="@color/background_theme_color"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/triangle"
+        android:id="@+id/triangleShap"
+        android:layout_above="@+id/BottomButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="-1dp"
+        android:scaleType="fitStart"
+        />
+
+
+
+</RelativeLayout>

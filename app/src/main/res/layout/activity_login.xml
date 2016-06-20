@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.surender.chikoopapp.Login"
+    android:background="@color/textColor">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/textColor">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:hint="@string/enter_10_digit_mobile_number"
+            android:textColorHint="@color/hintColor"
+            android:backgroundTint="@color/hintColor"
+            android:textColor="@color/FiledTextColor"
+            android:drawableLeft="@drawable/text_icon1"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:inputType="number"
+            android:id="@+id/login_EditTextMobileNO"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/text_icon5"
+            android:hint="@string/password_min_8_character"
+            android:backgroundTint="@color/hintColor"
+            android:textColor="@color/FiledTextColor"
+            android:textColorHint="@color/hintColor"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:id="@+id/login_EditTextPassword"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password ?"
+                android:layout_gravity="center"
+                android:textColor="@color/TheamColor"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support"
+                android:layout_gravity="center"
+                android:textColor="@color/TheamColor"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SIGN IN"
+        android:id="@+id/login_loginbtn"
+        android:textColor="@color/textColor"
+        android:background="@color/TheamColor"/>
+</RelativeLayout>

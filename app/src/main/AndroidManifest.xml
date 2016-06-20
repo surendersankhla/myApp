@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.surender.chikoopapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Singup"
+            android:label="Get your chikoop Account"
+            android:parentActivityName=".IntroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:label="Log into your chikoop Account"
+            android:parentActivityName=".IntroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VarifyOPTScreen"
+            android:label="Verify Mobile No."
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfilePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".CompleteNEarn"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".PinInterest"
+            android:label="Pin Your Interest"
+            android:parentActivityName=".ProfilePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Favorite"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".CongratulationScreen"
+            android:label="Congratulations!"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CiaoScreen"
+            android:label="Ciao"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".DrawerAccount"
+            android:parentActivityName=".HomeScreen"/>
+        <activity android:name=".DrawerNotification"
+            android:parentActivityName=".HomeScreen"/>
+        <activity android:name=".DrawerPrivacy"
+            android:parentActivityName=".HomeScreen"/>
+        <activity android:name=".DrawerMyCoupons"
+            android:parentActivityName=".HomeScreen"/>
+        <activity android:name=".MyTransaction"
+            android:parentActivityName=".HomeScreen"/>
+        <activity android:name=".DrawerFindFriends"
+            android:parentActivityName=".HomeScreen"/>
+
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

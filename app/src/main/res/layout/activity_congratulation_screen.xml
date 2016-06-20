@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.surender.chikoopapp.CongratulationScreen"
+    android:background="@color/background_theme_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/BottomButton"
+        android:background="@color/seperator_color">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET STARTED"
+            android:textColor="@color/textColor"
+            android:layout_marginRight="1dp"
+            android:background="@color/TheamColor"
+            android:id="@+id/favorite_back"
+            android:onClick="GetStartCall"/>
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="SUBMIT"-->
+        <!--android:textColor="@color/textColor"-->
+        <!--android:layout_marginLeft="1dp"-->
+        <!--android:background="@color/TheamColor"-->
+        <!--android:layout_weight="50"-->
+        <!--android:id="@+id/favorite_submit"-->
+        <!--android:onClick="submitBtnCall"/>-->
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/BottomButton">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/img_layout">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/congo_header"
+                    android:paddingBottom="-30dp"
+                    android:scaleType="fitStart"
+                    android:id="@+id/congoImg"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invite one of your Friends on Chikoop\nShare this Referral Code:"
+                android:textSize="@dimen/varify_text_font"
+                android:gravity="center"
+                android:textColor="@color/congo_font_color"
+                android:layout_below="@id/img_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/congo_firstline"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/congo_firstline"
+                android:layout_centerHorizontal="true"
+                android:text="ELMGOU"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/congo_font_color"
+                android:id="@+id/congo_referal"
+                android:background="@drawable/dotted_border"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share this Referral Code on:"
+                android:textSize="@dimen/varify_text_font"
+                android:gravity="center"
+                android:textColor="@color/congo_font_color"
+                android:layout_below="@+id/congo_referal"
+                android:layout_marginTop="15dp"
+                android:id="@+id/congo_sharedLine"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/congo_sharedLine"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/congo_socialIcon">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebook_icon"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/congo_facebook"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/twitter_icon"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/congo_twitter"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whats_app_icon"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/congo_whatsapp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A copy of the above Referral Code\nhas been sent to your Email"
+                android:textSize="@dimen/varify_text_font"
+                android:gravity="center"
+                android:textColor="@color/congo_font_color"
+                android:layout_below="@+id/congo_socialIcon"
+                android:layout_marginTop="10dp"
+                android:id="@+id/congo_emailLine"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resend Email"
+                android:textSize="@dimen/varify_text_font"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/TheamColor"
+                android:layout_below="@+id/congo_emailLine"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:id="@+id/congo_resendMail"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

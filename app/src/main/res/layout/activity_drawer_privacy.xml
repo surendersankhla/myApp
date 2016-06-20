@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.surender.chikoopapp.DrawerPrivacy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:id="@+id/lastSeenLayout"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Seen"
+            android:textStyle="bold"
+            android:textColor="@color/TheamColor"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:gravity="bottom"
+            android:id="@+id/lastSeen_title"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastseen_value"
+            android:text="Everyone"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/lastSeen_title"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hintColor"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lastseen_value"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:id="@+id/blockedLayout"
+        android:layout_below="@+id/lastSeenLayout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blocked Contacts:"
+            android:textStyle="bold"
+            android:textColor="@color/TheamColor"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:gravity="bottom"
+            android:id="@+id/blocked_title"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:gravity="bottom"
+            android:id="@+id/blocked_number"
+            android:layout_toRightOf="@+id/blocked_title"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/blocked_value"
+            android:text="List of Contacts that you have blocked"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/blocked_title"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hintColor"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/blocked_value"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.surender.chikoopapp.IntroScreen">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/info_view_pager"
+        android:background="@color/textColor">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/BottomButton"
+        android:background="@color/seperator_color"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@color/textColor"
+            android:layout_marginRight="1dp"
+            android:background="@color/TheamColor"
+            android:layout_weight="50"
+            android:id="@+id/singup"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="1dp"
+            android:background="@color/TheamColor"
+            android:layout_weight="50"
+            android:id="@+id/login"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BottomButton"
+        android:id="@+id/Dots"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orange_dot"
+            android:padding="3dp"
+            android:id="@+id/dot1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_dot"
+            android:padding="3dp"
+            android:id="@+id/dot2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_dot"
+            android:padding="3dp"
+            android:id="@+id/dot3"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_dot"
+            android:padding="3dp"
+            android:id="@+id/dot4"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_dot"
+            android:padding="3dp"
+            android:id="@+id/dot5"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_dot"
+            android:padding="3dp"
+            android:id="@+id/dot6"/>
+    </LinearLayout>
+</RelativeLayout>

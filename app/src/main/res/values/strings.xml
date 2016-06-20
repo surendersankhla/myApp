@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">ChikoopApp</string>
+    <string name="password_min_8_character">Password (min. 8 character)</string>
+    <string name="user_name">User name</string>
+    <string name="email_address">Email address</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="enter_referal_code">Enter Referal Code</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_10_digit_mobile_number">Enter 10 digit mobile number</string>
+
+
+    //-----------------Drawer---------------------
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Find People</item>
+        <item>Photos</item>
+        <item>Communities</item>
+        <item>Pages</item>
+        <item>What\'s Hot</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@android:drawable/ic_delete</item>
+        <item>@android:drawable/ic_delete</item>
+        <item>@android:drawable/ic_delete</item>
+        <item>@android:drawable/ic_delete</item>
+        <item>@android:drawable/ic_delete</item>
+        <item>@android:drawable/ic_delete</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+
+    //---------------Congo Screen------------
+
+    <string name="congo_msg"></string>
+
+
+    ///-----------------API's Refference ------------------------------
+
+
+    //================================================
+
+
+    //-------------------Profile Menu Items----------------------------
+    //----Date OF Birth---------
+    <string name="select_your_date_of_birth">Your Birth Date</string>
+    <string-array name="DateOfBirth">
+        <item>Date of birth</item>
+    </string-array>
+
+    //----Gender---------
+    <string name="select_your_gender">Select Your Gender</string>
+    <string-array name="Gender_list">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    //----Education---------
+    <string name="select_your_education">Select Your Education</string>
+    <string-array name="education_list">
+        <item>Education</item>
+        <item>BA</item>
+        <item>B.TECH</item>
+        <item>BSC</item>
+        <item>B.COM</item>
+        <item>BCA</item>
+        <item>MA</item>
+        <item>M.TECH</item>
+        <item>MSC</item>
+        <item>M.COM</item>
+        <item>MCA</item>
+
+    </string-array>
+
+    //----Status---------
+    <string name="select_your_status">Select Your Status</string>
+    <string-array name="status_list">
+        <item>Status</item>
+        <item>Single</item>
+        <item>Married</item>
+
+    </string-array>
+
+    //----Home Town---------
+    <string name="select_your_Hometown">Select Your Hometown</string>
+    <string-array name="hometown_list">
+        <item>Hometown</item>
+        <item>Jodhpur</item>
+        <item>Jaipur</item>
+        <item>delhi</item>
+        <item>Kolkata</item>
+        <item>Banglore</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Chennai</item>
+        <item>Panjab</item>
+        <item>Shimla</item>
+        <item>lakhnow</item>
+
+    </string-array>
+
+    //----Living IN---------
+    <string name="select_your_livingIn">Living in</string>
+    <string-array name="livingIn_list">
+        <item>Living in</item>
+        <item>Jodhpur</item>
+        <item>Jaipur</item>
+        <item>delhi</item>
+        <item>Kolkata</item>
+        <item>Banglore</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Chennai</item>
+        <item>Panjab</item>
+        <item>Shimla</item>
+        <item>lakhnow</item>
+
+    </string-array>
+
+    //----State---------
+    <string name="select_your_state">state</string>
+    <string-array name="state_list">
+        <item>State</item>
+        <item>Rajasthan</item>
+        <item>Gujrat</item>
+        <item>Maharastra</item>
+        <item>Karnataka</item>
+        <item>Punjab</item>
+        <item>Himachal Pradesh</item>
+        <item>Chennai</item>
+        <item>Bangal</item>
+        <item>Udisa</item>
+
+
+    </string-array>
+
+    //----Region---------
+    <string name="select_your_region">Select Your Region</string>
+    <string-array name="region_list">
+        <item>Region</item>
+        <item>Jodhpur</item>
+        <item>Jaipur</item>
+        <item>delhi</item>
+        <item>Kolkata</item>
+        <item>Banglore</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Chennai</item>
+        <item>Panjab</item>
+        <item>Shimla</item>
+        <item>lakhnow</item>
+
+    </string-array>
+    //----------Native Language--------
+    <string name="select_your_lenguage">Select Your Region</string>
+    <string-array name="lenguage_list">
+        <item>Select Your Lenguage</item>
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Bengali</item>
+        <item>Telugu</item>
+        <item>Marathi</item>
+        <item>Tamil</item>
+        <item>Urdu</item>
+        <item>Gujarati</item>
+        <item>Kannada</item>
+        <item>Malayalam</item>
+        <item>Odia</item>
+        <item>Punjabi</item>
+
+    </string-array>
+
+    //---------House Hold----
+    <string-array name="Household_list">
+        <item>Select Household</item>
+        <item>house1</item>
+        <item>house2</item>
+        <item>house3</item>
+        <item>house4</item>
+        <item>house5</item>
+
+    </string-array>
+
+    //---------Family Income----
+    <string-array name="FamilyIncome_list">
+        <item>Select Income</item>
+        <item>0 to 240000</item>
+        <item>240000 to 600000</item>
+        <item>600000 above</item>
+
+    </string-array>
+
+    //---------Profession----
+    <string-array name="Profession_list">
+        <item>Select Profession</item>
+        <item>Doctor</item>
+        <item>Engineer</item>
+        <item>Layer</item>
+        <item>Accoutant</item>
+        <item>other</item>
+
+    </string-array>
+    <string name="title_activity_home_screen">HomeScreen</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
