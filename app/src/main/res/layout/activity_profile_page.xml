@@ -90,20 +90,20 @@
                     android:layout_height="match_parent"
                     android:paddingRight="@dimen/activity_horizontal_margin"
                     android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:layout_marginTop="30dp"
-                    android:weightSum="4"
                     android:orientation="vertical"
+                    android:gravity="center"
                     >
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_weight="1"
                         android:weightSum="1">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
                             >
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -114,27 +114,27 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:textSize="15sp"
                                     android:textColor="@android:color/black"
                                     android:text="@string/select_your_date_of_birth"
                                     android:id="@+id/profilePage_dateOfBirth"
-                                    android:paddingLeft="15dp"
+                                    android:paddingLeft="10dp"
                                     android:onClick="DatePickerCall"/>
                             </LinearLayout>
 
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/temp"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
 
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
                             >
                         <Spinner
                             android:layout_width="match_parent"
@@ -142,48 +142,45 @@
                             android:prompt="@string/select_your_gender"
                             android:entries="@array/Gender_list"
                             android:id="@+id/profilePage_gender"
+                            android:layout_centerVertical="true"
                            />
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/profilePage_gender"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_weight="1"
                         android:weightSum="1">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
                             >
                         <Spinner
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:entries="@array/education_list"
                             android:id="@+id/profilePage_education"
+                            android:layout_centerVertical="true"
                             />
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/profilePage_education"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
 
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
                             >
                         <Spinner
@@ -192,29 +189,28 @@
                             android:entries="@array/status_list"
                             android:prompt="@string/select_your_status"
                             android:id="@+id/profilePage_status"
+                            android:layout_centerVertical="true"
 
                             />
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/profilePage_status"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_weight="1"
                         android:weightSum="1">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
                             >
                         <Spinner
                             android:layout_width="match_parent"
@@ -222,19 +218,17 @@
                             android:prompt="@string/select_your_Hometown"
                             android:entries="@array/hometown_list"
                             android:id="@+id/profilePage_hometown"
+                            android:layout_centerVertical="true"
                             />
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/profilePage_hometown"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
                             >
                         <Spinner
@@ -243,29 +237,28 @@
                             android:prompt="@string/select_your_livingIn"
                             android:entries="@array/livingIn_list"
                             android:id="@+id/profilePage_livingIn"
+                            android:layout_centerVertical="true"
                             />
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/profilePage_livingIn"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_weight="1"
                         android:weightSum="1"
                         android:baselineAligned="false">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
                             >
                         <Spinner
                             android:layout_width="match_parent"
@@ -273,20 +266,17 @@
                             android:prompt="@string/select_your_state"
                             android:entries="@array/state_list"
                             android:id="@+id/profilePage_state"
+                            android:layout_centerVertical="true"
                             />
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/profilePage_state"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_height="@dimen/spinner_height"
                             android:layout_weight="0.5"
                             >
                         <Spinner
@@ -295,14 +285,12 @@
                             android:prompt="@string/select_your_region"
                             android:entries="@array/region_list"
                             android:id="@+id/profilePage_region"
+                            android:layout_centerVertical="true"
                             />
                             <include layout="@layout/under_line"
+                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_below="@+id/profilePage_region"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginTop="-10dp"
+                                android:layout_alignParentBottom="true"
                                 />
                         </RelativeLayout>
                     </LinearLayout>
@@ -314,8 +302,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilePage_profilePic"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/default_user"
         app:border_color="#FF000000"
         android:layout_marginLeft="5dp"

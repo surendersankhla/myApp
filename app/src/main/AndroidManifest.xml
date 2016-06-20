@@ -51,11 +51,11 @@
         <activity
             android:name=".ProfilePage"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/AppTheme2"/>
         <activity
             android:name=".CompleteNEarn"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".PinInterest"
             android:label="Pin Your Interest"
