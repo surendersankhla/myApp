@@ -95,8 +95,10 @@
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AppIntroClass"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".AppIntroClass"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".SpeedDialClass"></activity>
     </application>
 
 </manifest>
